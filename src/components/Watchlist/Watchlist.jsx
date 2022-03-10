@@ -5,7 +5,10 @@ import { useWatchList } from '../../Context/Context';
 const Watchlist = () => {
   const { watchlist, dispatch } = useWatchList();
   const totalMovies = watchlist.reduce((acc, cv) => cv.quantity + acc, 0);
-  if (watchlist.length === 0) return <p>No Movies added yet !</p>;
+  if (watchlist.length === 0)
+    return (
+      <p>No Movies added yet,please go to movies tab and add some movies !</p>
+    );
 
   return (
     <>
@@ -43,7 +46,7 @@ const Watchlist = () => {
               <h2>{movie.title}</h2>
               <img
                 src={'https://image.tmdb.org/t/p/w500' + movie.backdrop_path}
-                alt=""
+                alt="movie_poster"
               />
               <div className="action_buttons">
                 <button
