@@ -1,0 +1,51 @@
+/* .total {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background: rgba(233, 31, 172, 0.883);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+} */
+.watchlist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 1rem;
+}
+.action_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.remove_button {
+  border-radius: 3rem;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  background: linear-gradient(#fd297b, #ff655b);
+}
+
+.quantity_buttons {
+  display: flex;
+  gap: 0.15rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(#fd297b, #ff655b); */
+}
+
+.quantity_buttons > button {
+  border-radius: 50%;
+  background-color: green;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
